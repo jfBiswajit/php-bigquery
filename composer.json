@@ -1,0 +1,34 @@
+{
+  "name": "jfbiswajit/php-bigquery",
+  "description": "PHP BigQuery for Laravel is a seamless integration package that allows you to harness the power of Google BigQuery in your Laravel applications effortlessly. With a zero-configuration setup, plug and play this library to perform high-speed querying and advanced analytics on large datasets.",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Biswajit Biswas",
+      "email": "jfbiswajit@gmail.com"
+    }
+  ],
+  "require": {
+    "google/cloud-bigquery": "^1.25"
+  },
+  "autoload": {
+    "psr-4": {
+      "JfBiswajit\\PHPBigQuery\\": "src"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "JfBiswajit\\PHPBigQuery\\Providers\\BigQueryServiceProvider"
+      ],
+      "aliases": {
+        "BigQuery": "JfBiswajit\\PHPBigQuery\\Facades\\BigQuery"
+      }
+    }
+  },
+  "config": {
+    "minimum-stability": "dev-master"
+  },
+  "version": "1.0.0"
+}
